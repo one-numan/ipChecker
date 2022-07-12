@@ -64,7 +64,7 @@
 <body>
 <nav class="navbar navbar-expand-sm navbar-dark " style="box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; background-color:rgba(0, 0, 0, 0.5);">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{{ url_for('index') }}">IP Checker</a>
+    <a class="navbar-brand" href="javascript:void(0)">IP Checker</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -103,7 +103,7 @@
         <td>{{ y|upper() | replace('_',' ') }} </td>
     </tr>
         {% endfor %}
-</table>
+</table><br><br>
 <footer>
     <br>
   <p>Credits :- Mohd Numan (one Numan)</p>
