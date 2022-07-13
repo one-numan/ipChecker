@@ -61,16 +61,18 @@ def myip():
 def inputip():
     if request.method == 'POST':
         try:
+
             ip = request.form['search']
             a = ipapi.location(ip=ip)
-            filename='ip-'+ip+'.csv'
-            with open(filename,'w', encoding='UTF8') as csvfile:
-                csvwriter = csv.writer(csvfile) 
+            # filename='ip-'+ip+'.csv'
+            # with open(filename,'w', encoding='UTF8') as csvfile:
+            #     csvwriter = csv.writer(csvfile)
                 
-                for i,j in a.items():
-                    csvwriter.writerow(["Parameter","information"])
-                    csvwriter.writerows([i,j])
-                csvfile.close()
+                # for i,j in a.items():
+                #     csvwriter.writerow(["Parameter","information"])
+                #     csvwriter.writerows([i,j])
+                # csvfile.close()
+            #     importing CSV but WIll add later
             return render_template('myip.html', a=a)
         except Exception as e:
             print(e)
