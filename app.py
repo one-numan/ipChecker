@@ -1,5 +1,5 @@
-from flask import Flask, render_template, url_for, redirect, request
-import ipapi  # Library
+from flask import Flask, render_template, request
+import ipapi  # Library >> pip install ipapi==1.0.4
 
 
 app = Flask(__name__)
