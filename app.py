@@ -87,10 +87,3 @@ def inputip():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
-"""
-Page 
-1.Index 
-2.myip
-3.inputIp [form Redirect]
-"""
