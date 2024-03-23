@@ -1,0 +1,38 @@
+<!-- Nav Bar Started -->
+<!-- Nav Bar End Calling this Header In Every Where -->
+
+<nav class="navbar navbar-expand-sm navbar-dark "
+    style="box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; background-color:rgba(0, 0, 0, 0.5);">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="/">IP Checker</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+
+                    <a class="nav-link" href="{{ url_for('myip') }}"><i class="fa fa-globe"></i> Search My IP</a>
+                </li> &nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                    <a class="nav-link" href="https://one-numan.blogspot.com/ "><i class="fa fa-user"></i> About</a>
+                </li>
+                &nbsp;&nbsp;&nbsp;
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/one-numan"><i class="fa-brands fa-github"></i>
+                        GitHub</a>
+                </li>
+
+            </ul>
+            <form class="d-flex" action="{{ url_for('inputip') }}" method="post">
+                <input class="form-control me-2" name='search' type="text" placeholder="   Enter IP Address"
+                    style="border-radius:0px 0px 0px 30px;">
+                <button class="btn btn-primary" type="submit" style="border-radius:0px 0px 30px 0px;"><i
+                        class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- Nav Bar End -->
